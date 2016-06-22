@@ -211,7 +211,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="form-group">
                                                                 <label>Marca:</label>
-                                                                <select id="select-marca" class="form-control">
+                                                                <select id="select-marca" class="form-control" disabled="">
                                                                     <option>Fiat</option>
                                                                     <option>Chevrolet</option>
                                                                     <option>Renault</option>
@@ -236,7 +236,14 @@
                                                         <div class="col-lg-12">
                                                             <div class="form-group">
                                                                 <label>Nome Cliente:</label>
-                                                                <input type="text" class="form-control">
+                                                                <div class="input-group m-b">
+                                                                    <span class="input-group-btn">
+                                                                        <button class="btn btn-primary" type="button">
+                                                                            <i class="fa fa-files-o"></i>
+                                                                        </button>
+                                                                    </span>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -266,7 +273,18 @@
                                                         <div class="col-lg-3">
                                                             <div class="form-group">
                                                                 <label>CPF/CNPJ:</label>
-                                                                <input type="text" class="form-control">
+                                                                <div class="input-group m-b">
+                                                                    <div class="input-group-btn">
+                                                                        <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                            CPF <span class="caret"></span>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li><a href="#">CPF</a></li>
+                                                                            <li><a href="#">CNPJ</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -287,7 +305,10 @@
                                                         <div class="col-lg-3">
                                                             <div class="form-group">
                                                                 <label>Forma de Pagamento:</label>
-                                                                <input type="text" class="form-control">
+                                                                <select id="select-marca" class="form-control">
+                                                                    <option>Á vista</option>
+                                                                    <option>Prazo</option>
+                                                                </select>
                                                             </div>
                                                         </div>
                                                     </div>
